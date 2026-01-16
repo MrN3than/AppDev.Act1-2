@@ -7,6 +7,7 @@ Word Count – Counts the number of words in a sentence by detecting space trans
 Character Count – Counts total characters (excluding whitespace).
 Lower Case Converter – Converts entire string to lowercase.
 Upper Case Converter – Converts entire string to uppercase.
+Palindrome Checker - Checks if the string is a palindrome. 
 
 Usage Sample
 String Manipulation Toolkit
@@ -15,8 +16,9 @@ String Manipulation Toolkit
 [3] Character Count
 [4] Lower Case Converter
 [5] Upper Case Converter
+[6] Palindrome Checker 
 [0] Exit
-Enter your choice (1-5)
+Enter your choice (0-5)
 > 1
 
 ------String Reversal------
