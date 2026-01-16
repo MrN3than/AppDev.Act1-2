@@ -2,8 +2,8 @@ using System.Runtime.InteropServices;
 while (true)
 {
     Console.WriteLine("\nString Manipulation Toolkit");
-    Console.WriteLine("[1] String Reversal \n [2] Word Count \n [3] Character Count \n [4] Lower Case Converter \n [5] Upper Case Converter \n [0] Exit");
-    Console.Write("Enter your choice (1-5) \n > ");
+    Console.WriteLine("[1] String Reversal \n [2] Word Count \n [3] Character Count \n [4] Lower Case Converter \n [5] Upper Case Converter \n [6] Palindrome Checker \n [0] Exit");
+    Console.Write("Enter your choice (0-6) \n > ");
 
     string input = Console.ReadLine();
     int intChoice;
@@ -57,6 +57,20 @@ while (true)
             Console.Write("Enter a string to convert to uppercase:\n > ");
             string strInputUpper = Console.ReadLine();
             Console.WriteLine($"Result: {strInputUpper.ToUpper()}");
+            break;
+        case 6:
+            Console.WriteLine("\n------Palindrome Checker------");
+            Console.Write("Enter a string to check:\n > ");
+            string strInputPal = Console.ReadLine() ?? "";
+            string reversed = StringReversal(strInputPal);
+            if (strInputPal.Equals(reversed, StringComparison.OrdinalIgnoreCase))
+            {
+                Console.WriteLine($"{strInputPal} is a Palindrome");
+            }
+            else
+            {
+                Console.WriteLine($"{strInputPal} is NOT a Palindrome");
+            }
             break;
         default:
             Console.WriteLine("Invalid input.");
