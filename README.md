@@ -18,7 +18,7 @@ String Manipulation Toolkit
 [5] Upper Case Converter
 [6] Palindrome Checker 
 [0] Exit
-Enter your choice (0-5)
+Enter your choice (0-6)
 > 1
 
 ------String Reversal------
