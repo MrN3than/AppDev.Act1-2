@@ -1,8 +1,8 @@
 Console.WriteLine("String Manipulation Toolkit");
 Console.WriteLine("[1] String Reversal \n [2] Word Count \n [3] Character Count \n [4] Lower Case Converter [5] Upper Case Converter");
-Console.Write("Enter your choice (1-5) \n >"); 
-
-int intChoice;
+Console.Write("Enter your choice (1-5) \n > ");
+string input = Console.ReadLine(); 
+int intChoice = int.Parse(input);
 
 switch (intChoice) {
     case 1:
@@ -21,6 +21,6 @@ switch (intChoice) {
         Console.WriteLine("Upper Case Converter");
         break;
     default:
-        Console.WriteLine("Invalid input. Please enter a number between 1-10.");
-        continue;
+        Console.WriteLine("Invalid input. Please enter a number between 1-5.");
+        break;
 }
